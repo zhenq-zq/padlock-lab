@@ -1,0 +1,18 @@
+{
+  "id": "LAB-PIK3CA-H1047R",
+  "gene": "PIK3CA",
+  "protein": "H1047R",
+  "name": "本研究 · PIK3CA H1047R",
+  "hgvs": "NM_006218.4:c.3140A>G",
+  "genomic": "WT78 / Mut79 · 实验靶标",
+  "assembly": "本研究合成DNA",
+  "strand": 1,
+  "ref": "A",
+  "alt": "G",
+  "position": 26,
+  "wt": "TTCATGAAACAAATGAATGATGCACATCATGGTGGCTGGACAACAAAAAT",
+  "clinvar": "https://www.ncbi.nlm.nih.gov/clinvar/RCV000014627/",
+  "sequenceSource": "guide.html#study-reference",
+  "verified": "原实验记录",
+  "experiment_reference": true
+}

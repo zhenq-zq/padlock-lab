@@ -1,0 +1,71 @@
+/* Add actions to the existing visual studio; keep its molecular artwork and palette. */
+.studio-tools{gap:18px;flex-wrap:wrap;justify-content:flex-end}
+.matched-oligos{border-top:1px solid #e1e3e8;margin:12px 0 24px;padding:18px 0 0}
+.matched-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}.matched-heading h3{font-size:15px}.matched-heading p{font-size:12px;margin:3px 0 0;color:#596573}
+.matched-row{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;padding:12px 0;border-top:1px solid #e8eaed}.matched-row b{display:block;font-size:13px}.matched-row small{display:block;font-size:11px;color:#596573;margin-top:3px}.matched-row code{font:13px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere;word-break:break-word;color:#344553;letter-spacing:.25px}
+#reader-target-start{margin-top:20px}#reader-matched[hidden]{display:none!important}
+@media(max-width:700px){.studio-tools{gap:12px;justify-content:flex-start}.studio-toolbar{align-items:flex-start}.matched-heading{flex-wrap:wrap}.matched-row{grid-template-columns:1fr;gap:7px}.matched-heading .actions{gap:8px}#reader-target-start{width:100%}}
+
+/* Remove repeated prose from the main canvas; experimental notes remain in details. */
+.studio .joint-options>p,.studio #result-warning{display:none!important}
+.studio .joint-options{padding-bottom:16px;margin-bottom:18px}
+.studio .matched-row small{color:#596573}
+
+.reader-more{border-top:1px solid #e1e3e8;padding:16px 0;margin:12px 0}.reader-more>summary{cursor:pointer;font-size:13px;font-weight:600;color:#495a68}.reader-detail-section{margin:20px 0}.reader-detail-section h4{font-size:13px;margin:0 0 10px}.reader-more .candidate-data>section{padding:14px 0}.reader-more p{font-size:12px;line-height:1.6}.reader-more table{font-size:12px}.reader-length-guide{margin:14px 0;padding:12px 0;border-top:1px solid #e1e3e8}.reader-length-guide h4{font-size:13px;margin:0 0 8px}.reader-length-guide table{width:100%;font-size:12px;border-collapse:collapse}.reader-length-guide th,.reader-length-guide td{text-align:left;padding:5px 8px 5px 0;border:0;background:transparent;font-weight:400}.reader-length-guide th{width:46%;color:#536575}#reader-linker-starts{font-size:12px;line-height:1.5}.studio .joint-options select{max-width:430px}
+
+.reader-length-guide table{min-width:0!important;table-layout:fixed}.reader-length-guide th,.reader-length-guide td{white-space:normal;overflow-wrap:anywhere}.studio .editing #editor-generate{color:#fff}
+
+/* Details: quiet laboratory report, scoped away from the primary artwork. */
+#reader-details{color:#344553}
+#reader-details>summary{font-size:14px;padding:4px 0}
+#reader-details[open]>summary{margin-bottom:20px}
+#reader-details .candidate-data>section,#reader-details>.reader-detail-section{background:#fff;border:1px solid #e2e6ea;border-radius:12px;padding:24px;margin:0 0 16px;box-shadow:none}
+#reader-details h4{font-size:15px;font-weight:600;color:#263640;line-height:1.5;margin:0 0 18px;text-align:left}
+#reader-details p,#reader-details .detail-notes{font-size:13px;line-height:1.75;text-align:left;letter-spacing:normal;color:#52616d}
+#reader-details p{margin:10px 0}
+.detail-arms{border:1px solid #e5e9ed;border-radius:8px;overflow:hidden}
+.detail-arm{display:grid;grid-template-columns:180px minmax(0,1fr) 54px;align-items:center;gap:16px;padding:14px 16px;background:#f8fafb}
+.detail-arm+ .detail-arm{border-top:1px solid #e5e9ed}
+.detail-arm>span{font-size:12px;font-weight:600;color:#536575}
+.detail-arm code{font:14px/1.7 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.7px;overflow-wrap:anywhere}
+.detail-arm small{text-align:right;color:#697782;font-size:12px}
+.detail-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:22px 0;padding-bottom:20px;border-bottom:1px solid #e8ecef}
+.detail-metrics>div{padding:0 20px;border-left:1px solid #e8ecef}
+.detail-metrics>div:first-child{padding-left:0;border-left:0}
+.detail-metrics dt{font-size:12px;color:#617482;margin:0 0 7px}
+.detail-metrics dd{font-size:18px;font-weight:500;color:#2f4555;margin:0 0 7px;font-variant-numeric:tabular-nums}
+.detail-metrics small{display:block;font-size:11px;line-height:1.6;color:#697782}
+#reader-details .detail-notes{padding:0 0 0 18px;margin:0;max-width:100%}
+.detail-notes li{padding:3px 0 3px 5px;margin:0}
+.detail-notes li::marker{color:#aab8c3}
+.detail-notes .detail-review{color:#886431}
+#reader-details .variant-map{padding:16px;background:#f8fafb;border-radius:8px;margin:0;font-size:13px;line-height:1.8;text-align:left}
+#reader-details .variant-map code{display:block;overflow-wrap:anywhere;word-break:break-word;font-size:13px;line-height:1.9;letter-spacing:.5px}
+#reader-details .table-wrap{border:1px solid #e1e7eb;border-radius:8px;overflow-x:auto;margin-top:16px}
+#reader-details table{font-size:13px;border-collapse:collapse;min-width:650px;width:100%;font-variant-numeric:tabular-nums}
+#reader-details caption{background:#f4f7f9;text-align:left;padding:12px 16px;font-size:12px;color:#617482}
+#reader-details th{background:#f8fafb;color:#455c6c;padding:14px 16px;text-align:left;font-size:12px;font-weight:600;border-bottom:1px solid #dfe6eb}
+#reader-details th small{display:block;font-size:11px;line-height:1.5;font-weight:400;color:#73828d}
+#reader-details td{padding:14px 16px;text-align:left;border-bottom:1px solid #e8edf1;white-space:nowrap}
+#reader-details tbody tr:last-child td{border-bottom:0}
+#reader-details tbody tr:nth-child(even){background:#fbfcfd}
+#reader-details tbody tr.reference{background:#fbf9f4}
+#reader-details #result-description{max-width:100%;line-height:1.8;color:#697782;font-size:12px}
+#reader-details #reference-note{font-size:12px;color:#697782;margin:12px 0 0}
+.detail-method-grid{display:grid;grid-template-columns:1fr;gap:0}
+.detail-method-row{display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;padding:16px 0;border-top:1px solid #e8edf1}
+.detail-method-row:first-child{border-top:0;padding-top:0}
+.detail-method-row:last-child{padding-bottom:0}
+.detail-method-row h5{font-size:12px;line-height:1.8;color:#41596a;font-weight:600;margin:0}
+#reader-details .detail-method-row p{margin:0}
+#reader-details a{color:#2e729b;text-underline-offset:3px}
+@media(max-width:700px){
+ #reader-details .candidate-data>section,#reader-details>.reader-detail-section{padding:18px 15px;border-radius:9px}
+ .detail-arm{grid-template-columns:1fr auto;gap:6px 10px;padding:12px}
+ .detail-arm>span{grid-column:1}.detail-arm code{grid-column:1 / -1;grid-row:2;font-size:13px}.detail-arm small{grid-column:2;grid-row:1}
+ .detail-metrics{grid-template-columns:1fr;gap:14px;margin:18px 0}
+ .detail-metrics>div,.detail-metrics>div:first-child{padding:0;border:0}.detail-metrics dd{font-size:17px}.detail-method-row{grid-template-columns:1fr;gap:5px}
+}
+#reader-details .detail-metrics>div{display:block;min-width:0}
+#reader-details .detail-metrics dt,#reader-details .detail-metrics dd,#reader-details .detail-metrics small{display:block;width:auto;flex:none}
+#reader-details .detail-metrics dd{font-size:18px;line-height:1.5;margin:0 0 6px;font-weight:500}

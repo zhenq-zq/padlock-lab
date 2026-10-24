@@ -1,0 +1,22 @@
+# Rebuildable runtimes and caches
+/runtime/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.venv/
+venv/
+.DS_Store
+# Local credentials and agent settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+.aws/
+.codex/
+.agents/
+# User-generated browser export samples
+/analysis/m1/browser-export/
+**/mpl-cache/

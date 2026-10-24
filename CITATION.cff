@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the specific Padlock Lab version used in your analysis. This version is a public release candidate."
+type: software
+title: "Padlock Lab"
+version: "0.2.0-rc.1"
+authors:
+  - name: "zhenq-zq"
+    website: "https://github.com/zhenq-zq"
+abstract: "Bounded computational single-zone padlock, RCA primer and full LbaCas12a crRNA design. Computational candidates require experimental validation."
+license: MIT
+repository-code: "https://github.com/zhenq-zq/padlock-lab"
+url: "https://github.com/zhenq-zq/padlock-lab"
+date-released: "2026-10-23"

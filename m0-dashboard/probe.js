@@ -1,0 +1,1 @@
+window.PROBE = {"name": "6_Padlock_Tm55/45", "sequence": "GTGCATCATTCATTTGTTTCCTCAGATACCCTAACCATCGATGTCAGTACGTGGTAGTCAGTTCCTAGGTGCAGTTCTTTGCCACCATGAC", "source": "OligoHistory (1).xlsx · OligoHistory · 第142行", "order_date": "2026-07-06"};

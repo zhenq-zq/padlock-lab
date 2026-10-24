@@ -1,0 +1,8 @@
+{
+  "wt": "CTGAATATAAACTTGTGGTAGTTGGAGCTGGTGGCGTAGGCAAGAGTGCCTTGACGATACA",
+  "mut": "CTGAATATAAACTTGTGGTAGTTGGAGCTGATGGCGTAGGCAAGAGTGCCTTGACGATACA",
+  "joint_design": true,
+  "temperature_c": 45,
+  "readout_temperature_c": 37,
+  "readout_monovalent_mm": 151
+}
